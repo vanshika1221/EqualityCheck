@@ -5,7 +5,7 @@ Write a program illustarting 'equals' , '==', '!=' , 'ne', and 'eq' with differe
 
 The EqualityCheck class contains methods that compare two lists for equality or inequality based on their structure or memory address. This class can be used in any Scala application that requires list comparison.
 
-Class Methods
+## Class Methods
 
 The following are the methods available in the EqualityCheck class:
 
