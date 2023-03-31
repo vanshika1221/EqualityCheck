@@ -26,4 +26,9 @@ class EqualityCheck {
     val result = (firstList != secondList)
     result
   }
+  // ne method checks if two objects are not identical (i.e., they have different memory addresses)
+  def neOperation[T](firstList: List[T], secondList: List[T]): Boolean = {
+    firstList.ne(secondList)
+  }
+
 }

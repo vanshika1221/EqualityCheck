@@ -26,6 +26,11 @@ class EqualityCheckTest extends AnyFunSuite {
     val secondList = List(4, 5, 6, 7)
     assert(equalityCheckObject.notEqualsOperation(firstList, secondList) === true)
   }
+  test("To perform ne Operation on List of type Int") {
+    val firstList = List(1, 2, 3, 4)
+    val secondList = List(2, 3, 4, 5)
+    assert(equalityCheckObject.neOperation(firstList, secondList) === true)
+  }
   test("To perform Equals Operation on List with null value") {
     val firstList = List(1, 2, 3, 4)
     val secondList = null

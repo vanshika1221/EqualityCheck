@@ -13,23 +13,29 @@ object Driver extends App {
 
     println("Equals Operation Result")
     println(s"$firstList and $secondList: " + equalityCheckObject.equalsOperation(firstList, secondList))
-    println(s"$firstList and $secondList: " + equalityCheckObject.equalsOperation(firstList, secondList))
-    println(s"$firstList and $secondList: " + equalityCheckObject.equalsOperation(firstList, secondList))
+    println(s"$firstList and $thirdList: " + equalityCheckObject.equalsOperation(firstList, thirdList))
+    println(s"$fifthList and $secondList(With same memory address): " + equalityCheckObject.equalsOperation(fifthList, secondList))
 
     println("Eq Operation Result")
     println(s"$firstList and $secondList: " + equalityCheckObject.eqOperation(firstList, secondList))
-    println(s"$firstList and $secondList: " + equalityCheckObject.eqOperation(firstList, secondList))
-    println(s"$firstList and $secondList: " + equalityCheckObject.eqOperation(firstList, secondList))
+    println(s"$firstList and $thirdList: " + equalityCheckObject.eqOperation(firstList, thirdList))
+    println(s"$fifthList and $secondList(With same memory address): " + equalityCheckObject.eqOperation(fifthList, secondList))
 
     println("Double Equals Operation(==) Result")
     println(s"$firstList and $secondList: " + equalityCheckObject.doubleEqualsOperation(firstList, secondList))
-    println(s"$firstList and $secondList: " + equalityCheckObject.doubleEqualsOperation(firstList, thirdList))
-    println(s"$firstList and $secondList: " + equalityCheckObject.doubleEqualsOperation(fifthList, secondList))
+    println(s"$firstList and $thirdList: " + equalityCheckObject.doubleEqualsOperation(firstList, thirdList))
+    println(s"$fifthList and $secondList(With same memory address): " + equalityCheckObject.doubleEqualsOperation(fifthList, secondList))
 
     println("Not Equals Operation(!=) Result")
     println(s"$firstList and $secondList: " + equalityCheckObject.notEqualsOperation(firstList, secondList))
-    println(s"$firstList and $secondList: " + equalityCheckObject.notEqualsOperation(firstList, thirdList))
-    println(s"$firstList and $secondList: " + equalityCheckObject.notEqualsOperation(fifthList, secondList))
+    println(s"$firstList and $thirdList: " + equalityCheckObject.notEqualsOperation(firstList, thirdList))
+    println(s"$fifthList and $secondList(With same memory address): " + equalityCheckObject.notEqualsOperation(fifthList, secondList))
+
+    println("Ne Operation Result")
+    println(s"$firstList and $secondList: " + equalityCheckObject.neOperation(firstList, secondList))
+    println(s"$firstList and $thirdList: " + equalityCheckObject.neOperation(firstList, thirdList))
+    println(s"$fifthList and $secondList(With same memory address): " + equalityCheckObject.neOperation(fifthList, secondList))
+
   } match {
     case Success(result) => println("Program executed successfully")
     case Failure(exception) => println("An exception occurred: " + exception.getMessage)
